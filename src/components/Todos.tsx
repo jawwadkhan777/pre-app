@@ -23,8 +23,8 @@ const Todos = () => {
 
     return (
         <ul className="mb-16 flex flex-col gap-2">
-            {todos.map((item) => {
-                return <li>{item.text}</li>
+            {todos.map((item, key) => {
+                return <li key={key}>{item.text}</li>
             })}
         </ul>
     )
