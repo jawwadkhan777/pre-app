@@ -16,6 +16,7 @@ function App() {
     <>
       {/* <h1 className='mb-4'>Hi World!</h1>
       <p>Muhammad Jawwad Khan Sherwani</p> */}
+      <LoginForm />
       {showCounter && <AutoCounter />}
       <button onClick={() => {setShowCounter(show => !show)}}>Toggle show counter</button>
       <PostsPage />
