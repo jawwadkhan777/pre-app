@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 type Post = {
     userId: number,
@@ -19,6 +19,7 @@ const PostsPage = () => {
     }
 
     useEffect(() => {
+        // component mount
         getPosts();
     }, []);
 
